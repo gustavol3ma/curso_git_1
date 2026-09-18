@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Exemplo</title>
+  <!-- Vínculo com a folha de estilos externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Bem-vindo à Minha Página</h1>
+    <p class="subtitulo">Exemplo prático de separação entre HTML e CSS</p>
+  </header>
+
+  <main class="conteudo">
+    <section class="card">
+      <h2>O que é HTML?</h2>
+      <p>HTML é a linguagem de marcação que define a <strong>estrutura</strong> e o conteúdo de uma página web.</p>
+    </section>
+
+    <section class="card">
+      <h2>O que é CSS?</h2>
+      <p>CSS é o que dá <strong>estilo visual</strong> (cores, fontes, espaçamentos e layout) aos elementos estruturados pelo HTML.</p>
+      <button class="botao" id="btnInteracao">Clique Aqui</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 - Criado para fins didáticos</p>
+  </footer>
+
+  <script>
+    // Um script simples apenas para demonstrar interação
+    document.getElementById('btnInteracao').addEventListener('click', function() {
+      alert('Você clicou no botão!');
+    });
+  </script>
+
+</body>
+</html>

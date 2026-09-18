@@ -1,0 +1,86 @@
+/* Reset básico para padronizar margens em diferentes navegadores */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #f1f5f9;
+  color: #334155;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #2563eb;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Área de Conteúdo Principal */
+.conteudo {
+  max-width: 700px;
+  width: 90%;
+  margin: 2rem auto;
+  flex: 1; /* Faz o rodapé ficar sempre embaixo */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Estilo dos Cards */
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+}
+
+/* Botão interativo */
+.botao {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botao:hover {
+  background-color: #1d4ed8;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #e2e8f0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
